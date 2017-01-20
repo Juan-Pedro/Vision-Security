@@ -1,0 +1,159 @@
+
+
+Table des matières
+
+1.VISION SECURITY Serrure électronique Z-Wave avec clavier et poignée
+  ZM1701 Door Lock without Handle
+    1.1. Résumé
+    1.2. Fonctions
+    1.3. Caractéristiques techniques
+    1.4. Données du module
+    1.5. Configuration
+        1.5.1. Commandes
+        1.5.2. Configuration du module
+        1.5.3. Groupes
+    1.6. Bon à savoir
+        1.6.1. Spécificités
+        1.6.2. Visuel alternatif
+    1.7. Wakeup
+    1.8. F.A.Q.
+
+    VISION SECURITY Serrure électronique Z-Wave avec clavier et poignée ZM1701 Door Lock without Handle
+
+    Le module
+
+module
+
+Le visuel Jeedom
+
+vuedefaut1
+
+1.1. Résumé
+
+Sécurisez votre maison en utilisant la ZM1701 Door Lock without Handle !
+
+Ce produit fonctionne sous le protocole Z-Wave crypté qui est actuellement supporté par la box domotique Jeedom.
+
+La serrure électronique de Vision Security est une serrure contrôlable en Z-Wave, et qui est compatible avec les systèmes européens, avec possibilité de monter sur une porte avec ouverture à droite ou à gauche.
+
+La serrure s’adapte sur une porte de 38mm d'épaisseur minimum, par contre le système ne peut être installé que sur un système de serrure classique et non un système 3 ou 5 points de fermeture (qui nécessite de lever la poignée avant de fermer à clef).
+
+L’ouverture et la fermeture de la porte pourront être réalisées avec les clefs fournies, par le clavier intégré ou à distance grâce au réseau Z-Wave. Les actions possibles par les commandes Z-Wave sont : fermer / ouvrir la porte, définir ou supprimer l’un des 15 codes utilisateurs (entre 4 et 8 digits) et possibilité d’activer ou désactiver certains codes temporairement.
+
+Note : Cette serrure ne peut pas être utilisée avec un système 3 ou 5 points de fermeture (qui nécessite de lever la poignée avant de fermer à clef).
+
+Contenu : - Poignée intérieure avec système de fermeture rapide - Poignée extérieure avec fermeture/ouverture par clef et par clavier - Système de fermeture avec mécanisme et cylindre - 3 clefs - Manuel d’installation
+
+Mise en place
+
+La mise en place demande d'être un peu bricoleur. Si la mortaise d’origine correspond à la taille de la serrure, ce sera facile à installer sinon cela demande d’ajuster la mortaise (trou dans la porte) et les vis d’entraxe.
+
+Facile à inclure dans Jeedom
+
+Avec le mode inclusion sécurisé dans votre plugin Z-wave, placer la serrure à moins d’un mètre du Jeedom et appuyer sur le clavier de la serrure ©  8  8  8  et tourner manuellement la molette intérieur aller-retour. La serrure sera reconnue directement.
+
+Etat de la batterie
+
+L’état de la batterie est facilement visible dans le visuel Jeedom Dashboard.
+
+FONCTIONS :
+
+Contrôlez votre porte d'entrée à distance
+Sécurisé l'accès à votre domicile
+S'adapte à la plupart des portes (épaisseur minimum de 38 mm)
+Peut s'intégrer dans des scènes Z-Wave, par exemple pour un système d'alarme
+Molette pour fermeture manuelle par l'intérieur
+Convient à un usage domestique ou d'entreprise
+Installation facile
+
+CARACTERISTIQUES TECHNIQUES :
+
+Type de module : Récepteur Z-Wave
+Couleur : Nickel
+Alimentation : 4x Piles AA (LR06)
+Fréquence : 868,42 Mhz
+Portée : jusqu'à 100 m à l'extérieur, jusqu'à 30 m dans les bâtiments
+Température d'utilisation : -10 °C à +50 °C
+
+1.4. Données du module
+
+Marque : VISION SECURITY
+
+Nom : ZM1701 Door Lock without Handle
+
+Fabricant ID :
+
+Type Produit : 1
+
+Produit ID : 1
+
+1.5. Configuration
+
+Pour configurer le plugin OpenZwave et savoir comment mettre Jeedom en inclusion référez-vous à cette documentation.
+
+Il faut absolument inclure ce module en mode sécurisé..
+
+Pour mettre le plugin Z-Wave (openzwave) dans Jeedom en mode inclusion sécurisée : il suffit d’aller sur la page de gestion des modules Z-wave et de cliquer sur l’icône "Réseau Zwave" inclusion securise jeedom 1
+
+Puis dans l’onglet "Actions" cliquez sur : "AJOUTER MODULE EN MODE SECURISE (INCLUSION)" inclusion securise jeedom 2
+
+Une fois inclus vous devriez obtenir ceci :
+
+Plugin Zwave
+
+1.5.1. Commandes
+
+Une fois le module reconnu, les commandes associées au module seront disponibles.
+
+Commandes
+
+Voici la liste des commandes :
+
+Statut : c’est la commande qui remontera la dernière action éxécutée (ouvrir/fermer)
+
+Ouvrir : c’est la commande qui permet d’ouvrir la serrure
+
+Fermer : c’est la commande qui permet de fermer la serrure
+
+Batterie : c’est la commande batterie
+
+1.5.2. Configuration du module
+
+Bien que ce module soit sur batterie il utilise la technologie Flirs. Cela veut dire qu’il n’a pas de notion de wake up et de réveil. Il récupérera toutes modifications de configutation en quasi temps réel comme un module secteur.
+
+Si vous voulez effectuer la configuration du module en fonction de votre installation, il faut pour cela passer par la bouton "Configuration" du plugin OpenZwave de Jeedom.
+
+Configuration plugin Zwave
+
+Vous arriverez sur cette page (après avoir cliqué sur l’onglet paramètres)
+
+Config1
+
+1.5.3. Groupes
+
+Ce module possède un seul groupe d’association.
+
+Groupe
+
+1.6. Bon à savoir
+
+1.6.1. Spécificités
+
+Bien que ce module soit sur batterie il utilise la technologie Flirs. Cela veut dire qu’il n’a pas de notion de wake up et de réveil. Il récupérera toutes modifications de configutation en quasi temps réel comme un module secteur.
+
+	Ce module renvoi son état si vous actionnez la serrure à la main l’état sera mis à jour.
+1.6.2. Visuel alternatif
+
+vuewidget
+
+1.7. Wakeup
+
+Il n’y a pas de notion de wake up pour ce module.
+
+1.8. F.A.Q.
+
+Ce module est sur batterie et je ne peux pas régler le wake up !!
+
+Pas de notion de wake up sur ce module; lire le paragraphe Spécificités.
+
+@kiko
